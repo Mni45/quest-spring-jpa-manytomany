@@ -23,7 +23,7 @@ public class Wizard {
     private boolean muggle;
     
     @ManyToMany
-    @JoinTable (name = "wizard_course", joinColumns = @JoinColumn( name = "wizard_id"), inverseJoinColumns = @JoinColumn(name = "school_id"))
+    @JoinTable (name = "wizard_course", joinColumns = @JoinColumn( name = "wizard_id"), inverseJoinColumns = @JoinColumn(name = "wizard_id"))
     private List<Course> courses = new ArrayList<>();
 
 	public Wizard() {
